@@ -24,7 +24,7 @@ st.title("📈 Stock Sniper Command Center")
 # --- SIDEBAR (CONTROLS) ---
 with st.sidebar:
     st.header("⚙️ Scanner Controls")
-    scan_limit = st.slider("Stocks to Scan", 50, 2000, 200) # Slider for speed
+    scan_limit = st.slider("Stocks to Scan", 50, 3000, 200) # Slider for speed
     st.info("Set to 2000 for full market scan (Takes ~5 mins)")
 
 # --- TABS ---
@@ -103,3 +103,4 @@ with tab3:
     else:
 
         st.info("Database is empty. Run a scan and save results!")
+
