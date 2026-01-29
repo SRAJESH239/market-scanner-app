@@ -5,8 +5,13 @@ import database as db
 import scanner as scan
 
 # --- TELEGRAM CONFIG ---
-TOKEN = "YOUR_BOT_TOKEN"      # 👈 PASTE TOKEN
-CHAT_ID = "YOUR_CHAT_ID"      # 👈 PASTE CHAT ID
+# Load secrets from Streamlit
+try:
+    TOKEN = st.secrets["TELEGRAM_TOKEN"]
+    CHAT_ID = st.secrets["TELEGRAM_CHAT_ID"]
+except:
+    st.error("❌ Error: Telegram Secrets not found. Please add them in App Settings.")
+    st.stop()
 
 def send_telegram_msg(message):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
@@ -96,4 +101,5 @@ with tab3:
     if not df_hist.empty:
         st.dataframe(df_hist, use_container_width=True)
     else:
+
         st.info("Database is empty. Run a scan and save results!")
