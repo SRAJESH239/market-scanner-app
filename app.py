@@ -28,7 +28,7 @@ with st.sidebar:
     st.info("Set to 3000 for full market scan (Takes ~5 mins)")
 
 # --- TABS ---
-tab1, tab2, tab3, tab4 = st.tabs(["🚀 Golden Stocks", "⚓ Bottom Fish", "NIFTY50 OPTIMISED ", "📜 History DB"])
+tab1, tab2, tab3, tab4 = st.tabs(["🚀 Golden Stocks", "⚓ Bottom Fish", "📜 History DB"])
 
 # --- TAB 1: GOLDEN STOCKS ---
 with tab1:
@@ -103,14 +103,6 @@ with tab3:
     else:
 
         st.info("Database is empty. Run a scan and save results!")
-
-
-with tab4:
-     if st.button("NIFTY50 OPTIMISED"):
-    break
-    
-
-
 
 
 
