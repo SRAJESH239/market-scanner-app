@@ -28,7 +28,7 @@ with st.sidebar:
     st.info("Set to 3000 for full market scan (Takes ~5 mins)")
 
 # --- TABS ---
-tab1, tab2, tab3, tab4 = st.tabs(["🚀 Golden Stocks", "⚓ Bottom Fish", "NIFTY50 OPTIMISED ", 📜 History DB"])
+tab1, tab2, tab3, tab4 = st.tabs(["🚀 Golden Stocks", "⚓ Bottom Fish", "NIFTY50 OPTIMISED ", "📜 History DB"])
 
 # --- TAB 1: GOLDEN STOCKS ---
 with tab1:
@@ -108,6 +108,7 @@ with tab3:
 with tab4:
     break
     
+
 
 
 
