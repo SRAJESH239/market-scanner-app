@@ -105,6 +105,9 @@ with tab3:
         st.info("Database is empty. Run a scan and save results!")
 
 
+with tab4:
+    break
+    
 
 
 
