@@ -106,8 +106,10 @@ with tab3:
 
 
 with tab4:
+     if st.button("NIFTY50 OPTIMISED"):
     break
     
+
 
 
 
